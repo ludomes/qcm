@@ -3,5 +3,24 @@ Projet QCM
 Serveur mySQL :
 	osmar.io
 	user ludomess:ludomess
+
+User (Eleve)
+Admin (Professeur)
+
+Les actions pour les Users :
+	Authentification
+	Choisir le qcm.
+	Repondre au qcm
+
+Les actions pour l’Admin :
+	Authentification.
+	Créer un qcm.
+	Créer une classe.
+	Afficher les réponses d’une classe ou d’un utilsateur.
 	
+
+
+1 page pour s ‘authentifier et choisir le qcm via une passphrase donnée.
+1 page pour répondre au questionnaire.
+1 page pour l’authentification de l’admin	
 	
