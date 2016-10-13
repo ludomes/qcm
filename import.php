@@ -8,6 +8,15 @@
 		<title>Accueil QCM</title>
 	</head>
 	
+	<?php
+		//Créer un dossier 'import'
+		$filenameImport = md5(uniqid(rand(), true));
+		$dossierImport = 'import';
+		if(!is_dir($dossierImport)){
+			mkdir($dossierImport, 0777, true);
+		}
+	?>
+
 	<body>
 		<h1>Accueil QCM</h1>
 		
@@ -24,14 +33,7 @@
 <input type="submit" name="submit" value="Envoyer" />
 </form>
 
-<?php
-//Créer un dossier 'import'
-$filenameImport = md5(uniqid(rand(), true));
-$dossierImport = 'import';
-if(!is_dir($dossierImport)){
-	mkdir($dossierImport, 0777, true);
-}
-?>
+
 
 	</body>
 </html>
