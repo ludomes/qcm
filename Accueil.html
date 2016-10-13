@@ -9,9 +9,10 @@
 	
 	<body>
 		<h1>Accueil QCM</h1>
+		<form method="post" action="Eleve.php">
 		<table>				
 			<tr>
-				<td><from method="post" action="Eleve.php"><p><label for ="id">Prénom :</label></p></td>
+				<td><p><label for ="id">Prénom :</label></p></td>
 				<td><p><input type="text" name="prenom" id="prenom" /></p></td>
 			</tr>
 			<tr>
@@ -27,8 +28,9 @@
 				<td><p><input type="password" name="password" id="password" /></p></td>
 			</tr>
 			<tr>
-				<td colspan = "2"><input type="submit" value="Valider" /></form></td>
+				<td colspan = "2"><input type="submit" value="Valider" /></td>
 			</tr>
 		</table>
+		</form>
 	</body>
 </html>
