@@ -1,0 +1,30 @@
+<qm>Quel est le tag correct qui produit la plus grande taille de caractère?
+<qo>h1
+<qo>h6
+<qo>heading
+<qo>head
+<r>1
+
+<qm>La balise "B" met le texte en:
+<qo>Souligné	   
+<qo>En italique   
+<qo>En gras   
+<qo>Transparent
+<r>3
+
+<qm>La balise "TABLE" crée un tableau. A l'intérieur, quelle balise crée une nouvelle ligne:
+<qo>LINE	
+<qo>ROW   
+<qo>TD   
+<qo>TR
+<r>4
+
+<qm>Complétez la balise, "INPUT TYPE=…" pour créer un bouton permettant d'envoyer les informations du formulaire:
+<qo>SEND	
+<qo>BUTTON     
+<qo>TEXT     
+<qo>SUBMIT
+<r>4
+
+<ql> Quelle est la difference entre php et html ?
+
