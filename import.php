@@ -28,8 +28,8 @@
 //Créer un dossier 'import'
 $filenameImport = md5(uniqid(rand(), true));
 $dossierImport = 'import';
-if(!is_dir($dossier)){
-	mkdir($dossier, 0777, true);
+if(!is_dir($dossierImport)){
+	mkdir($dossierImport, 0777, true);
 }
 ?>
 
