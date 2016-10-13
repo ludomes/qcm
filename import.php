@@ -19,7 +19,7 @@
 				if(!is_dir($dossierImport)){
 					mkdir($dossierImport, 0777, true);
 				}
-				print "le fichier est : $_FILES.['mon_fichier']['name']";
+				echo "le fichier est : $_FILES.['mon_fichier']['name']";
 			}
 			
 		?>
