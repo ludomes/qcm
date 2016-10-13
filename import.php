@@ -13,7 +13,7 @@
 	
 		<?php
 			//Créer un dossier 'import'
-			if ($monfichier == null) {
+			if (!($monfichier == '')) {
 				$filenameImport = md5(uniqid(rand(), true));
 				$dossierImport = 'import';
 				if(!is_dir($dossierImport)){
