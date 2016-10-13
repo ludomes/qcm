@@ -8,7 +8,7 @@
 	</head>
 	
 	<body>
-		<p><?php echo $_POST['prenom'].$_POST['nom']; ?></p>
+		<p><?php echo $_POST['prenom'].' '.$_POST['nom']; ?></p>
 				
 	</body>
 </html>
