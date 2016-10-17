@@ -20,7 +20,7 @@
 	if(!isset($erreur))	{
 		//On formate le nom du fichier ici...
 		//$fichier =  md5(uniqid(rand(), true));
-		$fichier = 'import.txt'
+		$fichier = 'import.txt';
 	if(move_uploaded_file($_FILES['mon_fichier']['tmp_name'], $dossier . $fichier)) {
 		echo 'Upload effectué avec succès !';
 	}
