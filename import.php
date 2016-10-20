@@ -1,5 +1,5 @@
 <?php
-	include database.php;
+	include DBMySql.php;
 
 	// uploader le fichier.
 	function uploadFichier () {
