@@ -64,6 +64,7 @@
 		echo 'le fichier ' .$result .'\nUpload effectué avec succès !';
 	
 	?></br><?php
+	
 	DBMySql::connectDatabase();
 
 ?>

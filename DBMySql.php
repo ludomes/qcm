@@ -1,10 +1,12 @@
 <?php
 
-$ServeurMySQL = 'localhost:3306';
-$UserMySQL = 'ludomess';
-$UserPWD = 'ludomess';
+
 
 class DBMySql {
+	private $ServeurMySQL = 'localhost:3306';
+	private $UserMySQL = 'ludomess';
+	private $UserPWD = 'ludomess';
+	
 	public static  function connectDatabase  () {
 		// on se connecte à example.com et au port 3307
 		echo 'Connexion au serveur sql';
