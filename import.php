@@ -62,7 +62,9 @@
 	$result = uploadFichier();
 	if ($result != null) 
 		echo 'le fichier ' .$result .'\nUpload effectué avec succès !';
-	database ();
+	
+	?></br><?php
+	connectDatabase();
 
 
 
