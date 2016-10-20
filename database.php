@@ -7,6 +7,7 @@ $UserPWD = 'ludomess';
 class DBMySql {
 	public static  function connectDatabase  () {
 		// on se connecte à example.com et au port 3307
+		echo 'Connexion au serveur sql';
 		$link = mysql_connect($ServeurMySQL, $UserMySQL, $UserPWD);
 		if (!$link) {
 			echo 'Connexion impossible';
