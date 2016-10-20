@@ -66,9 +66,4 @@
 	?></br><?php
 	connectDatabase();
 
-
-
-
-
-	
 ?>
