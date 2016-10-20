@@ -32,12 +32,9 @@
 					secondes = 0;
 					minutes++;
 				}
-				document.getElementById("chronotime").innerHTML = minutes + ":" + secondes
-			} 
-			timer=setInterval("chrono()", 1000);
-					
-			
-
+				document.getElementById('chrono').innerHTML = text;
+			}
+			timer = setInterval('chrono()', 1000);
 		</script>
 		
 		
