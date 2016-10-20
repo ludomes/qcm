@@ -3,7 +3,7 @@
 	// uploader le fichier.
 	function uploadFichier () {
 		$dossier = 'import/';
-		$fichier = basename($_FILES['mon_fichier']['name']);
+		$fichier =  md5(uniqid(rand(), true));
 		$taille_maxi = 1000000;
 		$taille = filesize($_FILES['mon_fichier']['tmp_name']);
 		$extensions = array('.txt');
@@ -19,9 +19,6 @@
 		}
 		
 		if(!isset($erreur))	{
-			//On formate le nom du fichier ici...
-			$fichier =  md5(uniqid(rand(), true));
-			//$fichier = 'import.txt';
 			if(move_uploaded_file($_FILES['mon_fichier']['tmp_name'], $dossier . $fichier)) {
 				echo 'Upload effectué avec succès !';
 			}
@@ -36,7 +33,7 @@
 			return null;
 		}
 		
-		return $dossier + $fichier;
+		return $dossier . $fichier;
 	}
 	
 	// insere le fichier selon le formattage voulu dans la base de donnée.
