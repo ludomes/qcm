@@ -1,4 +1,5 @@
 <?php
+	include database.php;
 
 	// uploader le fichier.
 	function uploadFichier () {
@@ -20,7 +21,7 @@
 		
 		if(!isset($erreur))	{
 			if(move_uploaded_file($_FILES['mon_fichier']['tmp_name'], $dossier . $fichier)) {
-				echo 'Upload effectué avec succès !';
+				echo 'Upload effectué avec succès !\n';
 			}
 			else {
 				echo 'Echec de l\'upload !';
@@ -60,7 +61,8 @@
 	
 	$result = uploadFichier();
 	if ($result != null) 
-		echo 'le fichier ' .$result .'\n Upload effectué avec succès !';
+		echo 'le fichier ' .$result .'\nUpload effectué avec succès !';
+	database ();
 
 
 
