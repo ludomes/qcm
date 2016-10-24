@@ -51,7 +51,7 @@
 				chrono()
 			}
 			
-			function chronoContinue()
+			/*function chronoContinue()
 			{
 				document.chronoForm.startstop.value = "stop!"
 				document.chronoForm.startstop.onclick = chronoStop
@@ -79,7 +79,7 @@
 				document.chronoForm.startstop.onclick = chronoContinue
 				document.chronoForm.reset.onclick = chronoStopReset
 				clearTimeout(timerID)
-			}
+			}*/
 		</script>
 	</head>
 	
