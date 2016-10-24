@@ -18,7 +18,7 @@
 				end = new Date()
 				diff = end - start
 				diff = new Date(diff)
-				var msec = diff.getMilliseconds()
+				//var msec = diff.getMilliseconds()
 				var sec = diff.getSeconds()
 				var min = diff.getMinutes()
 				var hr = diff.getHours()-1
@@ -30,15 +30,15 @@
 				{
 					sec = "0" + sec
 				}
-				if(msec < 10)
+				/*if(msec < 10)
 				{
 					msec = "00" +msec
 				}
 				else if(msec < 100)
 				{
 					msec = "0" +msec
-				}
-				document.getElementById("chronotime").value = hr + ":" + min + ":" + sec + ":" + msec
+				}*/
+				document.getElementById("chronotime").value = hr + ":" + min + ":" + sec +// ":" + msec
 				timerID = setTimeout("chrono()", 10)
 			}
 			
@@ -63,13 +63,13 @@
 			
 			function chronoReset()
 			{
-				document.getElementById("chronotime").value = "0:00:00:000"
+				document.getElementById("chronotime").value = "0:00:00"
 				start = new Date()
 			}
 			
 			function chronoStopReset()
 			{
-				document.getElementById("chronotime").value = "0:00:00:000"
+				document.getElementById("chronotime").value = "0:00:00"
 				document.chronoForm.startstop.onclick = chronoStart
 			}
 			
@@ -98,9 +98,9 @@
 		</div>
 		
 		<form name="chronoForm">
- 			<input type="text" name="chronotime" id="chronotime" value="0:00:00:00"/>
-    		<input type="button" name="startstop" value="start!" onClick="chronoStart()" />
-    		<input type="button" name="reset" value="reset!" onClick="chronoReset()" />
+ 			<input type="text" name="chronotime" id="chronotime" value="0:00:00"/>
+    		<!-- <input type="button" name="startstop" value="start!" onClick="chronoStart()" /> -->
+    		<!--<input type="button" name="reset" value="reset!" onClick="chronoReset()" /> -->
 		</form>						
 	</body>
 </html>
