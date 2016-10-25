@@ -10,8 +10,8 @@ class DBMySql {
 		$UserMySQL = 'ludomess';
 		$UserPWD = 'ludomess';
 		// on se connecte à example.com et au port 3307
-		print "\nConnexion au serveur sql\n";
-		print "User : ".$UserMySQL;
+		print ("\nConnexion au serveur sql\n");
+		print ("User : ".$UserMySQL);
 		$link = mysql_connect($ServeurMySQL, $UserMySQL, $UserPWD);
 		if (!$link) {
 			echo 'Connexion impossible';
