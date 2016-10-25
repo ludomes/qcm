@@ -38,9 +38,17 @@
 	}
 	
 	// insere le fichier selon le formattage voulu dans la base de donnée.
-	function insertFichier () {
+	function insertFichier ($fichier) {
+		// ouverture de la connection avec la base de donnée
+		include_once('DBMySql.php');
+		
+		$maBase = new DBMySql();
+		$maBase->connectDatabase();
+		
+	
+		
 		/*Ouverture du fichier en lecture seule*/
-		$handle = fopen('/path/file.txt', 'r');
+		$handle = fopen($fichier, 'r');
 		/*Si on a réussi à ouvrir le fichier*/
 		if ($handle)
 		{
@@ -55,19 +63,20 @@
 			/*On ferme le fichier*/
 			fclose($handle);
 		}
+		// fermeture de la base
+		$maBase->disconnectDatabase();
+		
 		return true;
 	}
 	
 	
 	$result = uploadFichier();
-	if ($result != null) 
+	if ($result != null) {
 		echo 'le fichier ' .$result .'\nUpload effectué avec succès !';
+		echo '<br>' ;
+		insertFichier($result);
+	}
 	
-	echo '<br>' ; 
 	
-	include_once('DBMySql.php');
-	$maBase = new DBMySql();
-	$maBase->connectDatabase();
-	$maBase->disconnectDatabase();
 
 ?>

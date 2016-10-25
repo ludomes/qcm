@@ -6,7 +6,7 @@ class DBMySql {
 	private $_ServeurMySQL = 'localhost';
 	private $_UserMySQL = 'ludomess';
 	private $_UserPWD = 'ludomess';
-	private $_link = "";
+	public $_link;
 	
     function __construct() {
     }
@@ -15,7 +15,7 @@ class DBMySql {
 		// on se connecte à example.com et au port 3307
 		echo 'Connexion au serveur sql <br>';
 		echo 'User : ' . $this->_UserMySQL . '<br>';
-		$this->link = mysql_connect($this->_ServeurMySQL, $this->_UserMySQL, $this->_UserPWD);
+		$this->_link = mysql_connect($this->_ServeurMySQL, $this->_UserMySQL, $this->_UserPWD);
 		if (!$this->_link) {
 			die('Connexion impossible : ' . mysql_error());
 		}
