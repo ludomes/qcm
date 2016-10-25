@@ -3,30 +3,27 @@
 
 
 class DBMySql {
-	private $_ServeurMySQL;
-	private $_UserMySQL;
-	private $_UserPWD;
-	private $_link;
+	private $_ServeurMySQL = 'localhost';
+	private $_UserMySQL = 'ludomess';
+	private $_UserPWD = 'ludomess';
+	private $_link = "";
 	
     function __construct() {
-    	$this->_ServeurMySQL= 'localhost';
-    	$this->_UserMySQL = 'ludomess';
-    	$this->_UserPWD = 'ludomess';
     }
 	
 	public function connectDatabase  () {
 		// on se connecte à example.com et au port 3307
 		echo 'Connexion au serveur sql <br>';
-		echo 'User : ' . $this->UserMySQL . '<br>';
-		$this->link = mysql_connect($this->ServeurMySQL, $this->UserMySQL, $this->UserPWD);
-		if (!$this->link) {
+		echo 'User : ' . $this->_UserMySQL . '<br>';
+		$this->link = mysql_connect($this->_ServeurMySQL, $this->_UserMySQL, $this->_UserPWD);
+		if (!$this->_link) {
 			die('Connexion impossible : ' . mysql_error());
 		}
 		echo 'Connecté correctement';
 	}
 	
 	public function disconnectDatabase () {
-		mysql_close($this->link);
+		mysql_close($this->_link);
 	}
 }
 
