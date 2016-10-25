@@ -3,12 +3,14 @@
 
 
 class DBMySql {
-	private $ServeurMySQL = 'localhost';
-	private $UserMySQL = 'ludomess';
-	private $UserPWD = 'ludomess';
+	private $ServeurMySQL;
+	private $UserMySQL;
+	private $UserPWD;
 	
     function __construct() {
-        
+    	$ServeurMySQL= 'localhost';
+    	$UserMySQL = 'ludomess';
+    	$UserPWD = 'ludomess';
     }
 	
 	public function connectDatabase  () {
