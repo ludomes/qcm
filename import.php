@@ -63,9 +63,11 @@
 	if ($result != null) 
 		echo 'le fichier ' .$result .'\nUpload effectué avec succès !';
 	
-	?></br><?php 
+	echo '<br>' ; 
 	
 	include_once('DBMySql.php');
-	DBMySql::connectDatabase();
+	$maBase = new DBMySql();
+	$maBase->connectDatabase();
+	$maBase->disconnectDatabase();
 
 ?>
