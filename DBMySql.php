@@ -3,7 +3,7 @@
 
 
 class DBMySql {
-	private $ServeurMySQL = 'localhost:3306';
+	private $ServeurMySQL = 'localhost:3307';
 	private $UserMySQL = 'ludomess';
 	private $UserPWD = 'ludomess';
 	
