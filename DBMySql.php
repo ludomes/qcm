@@ -9,7 +9,8 @@ class DBMySql {
 	
 	public static  function connectDatabase  () {
 		// on se connecte à example.com et au port 3307
-		echo 'Connexion au serveur sql';
+		print "\nConnexion au serveur sql\n";
+		print "User : ".$UserMySQL;
 		$link = mysql_connect($ServeurMySQL, $UserMySQL, $UserPWD);
 		if (!$link) {
 			echo 'Connexion impossible';
