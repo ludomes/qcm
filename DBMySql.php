@@ -3,11 +3,12 @@
 
 
 class DBMySql {
-	private $ServeurMySQL = 'localhost:3307';
-	private $UserMySQL = 'ludomess';
-	private $UserPWD = 'ludomess';
+
 	
 	public static  function connectDatabase  () {
+		$ServeurMySQL = 'localhost:3307';
+		$UserMySQL = 'ludomess';
+		$UserPWD = 'ludomess';
 		// on se connecte à example.com et au port 3307
 		print "\nConnexion au serveur sql\n";
 		print "User : ".$UserMySQL;
