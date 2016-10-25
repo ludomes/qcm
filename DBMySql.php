@@ -3,16 +3,15 @@
 
 
 class DBMySql {
-
+	private $ServeurMySQL = 'localhost';
+	private $UserMySQL = 'ludomess';
+	private $UserPWD = 'ludomess';
 	
     function __construct() {
         
     }
 	
 	public function connectDatabase  () {
-		$ServeurMySQL = 'localhost';
-		$UserMySQL = 'ludomess';
-		$UserPWD = 'ludomess';
 		// on se connecte à example.com et au port 3307
 		echo 'Connexion au serveur sql <br>';
 		echo 'User : ' . $UserMySQL . '<br>';
@@ -21,6 +20,9 @@ class DBMySql {
 			die('Connexion impossible : ' . mysql_error());
 		}
 		echo 'Connecté correctement';
+	}
+	
+	public function disconnectDatabase () {
 		mysql_close($link);
 	}
 }
