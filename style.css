@@ -40,6 +40,7 @@ startsop
 	left : -9999px;
 	top : -9999px;
 	visibility : hidden;
+	display : none;
 }
 
 #reset
@@ -48,4 +49,5 @@ startsop
 	left : -8888px;
 	top : -8888px;
 	visibility : hidden;
+	display : none;
 }
