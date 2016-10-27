@@ -36,10 +36,12 @@ table p
 
 startsop
 {
-	position-abolute : -9999px;
+	position : abolute;
+	left : -9999px;
 }
 
 reset
 {
-	position-absolute : -8888px;
+	position : absolute;
+	left : -8888px;
 }
