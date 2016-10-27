@@ -99,8 +99,8 @@
 		
 		<form name="chronoForm">
  			<input type="text" name="chronotime" id="chronotime" value="0:00:00:000"/>
-    		<div id="startstop"><input type="button" name="startstop" value="start!" onClick="chronoStart()" /></div>
-    		<div id="reset"><input type="button" name="reset" value="reset!" onClick="chronoReset()" /></div>
+    		<div id="startstop"><input type="button" name="startstop" value="start!" onClick="chronoStart()" style="display:none" /></div>
+    		<div id="reset"><input type="button" name="reset" value="reset!" onClick="chronoReset()" style="display:none" /></div>
 		</form>						
 	</body>
 </html>
