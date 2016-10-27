@@ -34,10 +34,11 @@ table p
     border : 1px solid #9EA0A1;
 }
 
-#startsop
+startsop
 {
 	position : abolute;
 	left : -9999px;
+	top : -9999px;
 	visibility : hidden;
 }
 
@@ -45,5 +46,6 @@ table p
 {
 	position : absolute;
 	left : -8888px;
+	top : -8888px;
 	visibility : hidden;
 }
