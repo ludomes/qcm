@@ -33,3 +33,13 @@ table p
     margin : 2px 2px 0 2px !important;
     border : 1px solid #9EA0A1;
 }
+
+startsop
+{
+	position-abolute : -9999px;
+}
+
+reset
+{
+	position-absolute : -8888px;
+}
