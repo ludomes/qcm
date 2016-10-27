@@ -38,10 +38,12 @@ table p
 {
 	position : abolute;
 	left : -9999px;
+	visibility : hidden;
 }
 
 #reset
 {
 	position : absolute;
 	left : -8888px;
+	visibility : hidden;
 }
